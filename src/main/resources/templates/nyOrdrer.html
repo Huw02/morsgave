@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestil bord - Le Scheffon</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body align="center" class="prut">
+<h1>Bestil bord</h1>
+
+<header>
+    <div class="logo">
+        <h1>Le Scheffon</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/forside">Hjem</a></li>
+            <li><a href="/nyOrdrer">Bestil Bord</a></li>
+            <li><a href="/seOrdrer">Se bestillinger</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<form action="#" th:action="@{/nyOrdrer}" th:object="${nyOrdrer}" method="post">
+    <label for="name">Navn:</label>
+    <input type="text" id="name" th:field="*{name}" required/><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" th:field="*{email}" required/><br><br>
+
+    <label for="date">Dato:</label>
+    <input type="date" id="date" th:field="*{date}" required/><br><br>
+
+
+
+    <button th:href="@{/nyOrdrer}" type="submit">Bestil bord</button>
+</form>
+</body>
+</html>

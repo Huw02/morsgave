@@ -1,0 +1,109 @@
+/* Grunnleggende reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: navy;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: pink;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: pink;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Meny section */
+.menu {
+    background-color: lightblue;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    margin: 30px 0;
+}
+
+.menu-item h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.menu-item .price {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.nullermand{
+    align-content: center;
+    color: darkorange;
+}
+
+.prut{
+    color: darkorange;
+}
+

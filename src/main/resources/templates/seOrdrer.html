@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Alle order</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body align="center">
+<header>
+    <div class="logo">
+        <h1>Le Scheffon</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/forside">Hjem</a></li>
+            <li><a href="/nyOrdrer">Bestil Bord</a></li>
+            <li><a href="/seOrdrer">Se bestillinger</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<table border="1" class="nullermand">
+<thead>
+<tr>
+    <th>Navn</th>
+    <th>Email</th>
+    <th>Reserveret</th>
+</tr>
+</thead>
+<tbody>
+    <tr th:each="alle : ${orders}">
+        <td th:text="${alle.getName()}"></td>
+        <td th:text="${alle.getEmail()}"></td>
+        <td>Tjek</td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
